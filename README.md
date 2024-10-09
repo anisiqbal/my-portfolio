@@ -2,16 +2,18 @@ https://www.youtube.com/playlist?list=PL3i9po_eXL_px7fJ7nv8MtfP1ZmKD8UMV
 
 https://github.com/muhammadawaisshaikh/live-trade-portal
 
--> If your Angular CLI installed in pc Apply this comands.
+## If your Angular CLI installed in pc Apply this comands.
 
--> Create new Angular App
+## Create new Angular App
 ng new portfolio.
 
--> Which stylesheet format would you like to use? "Sass (SCSS)".
+## Which stylesheet format would you like to use? 
+"Sass (SCSS)".
 
-->  Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? "Yes".
+## Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? 
+"Yes".
 
--> Create new Component
+## Create new Component
 ng generate component homepage
 or
 ng g c header
@@ -33,7 +35,7 @@ ng g c header
     } -->
 
 
-->   lazy loading
+## lazy loading
 {
         path: 'contact-us',
         loadComponent: ()=> import("../app/components/contact-us/contact-us.component").then(c => c.ContactUsComponent)
@@ -62,10 +64,10 @@ ng g c header
 you copy in selector value in header component just like this "selector: 'app-header'," then paste in 
 app.component.html like <app-header></app-header> , then add " import header component" in app.component.ts and call to import same component. -->
 
--->How to add Bootstrap?
+## How to add Bootstrap?
 npm install bootstrap
 
---> Git Configuration
+## Git Configuration
 As you read briefly in Getting Started, you can specify Git configuration settings with the git config command. One of the first things you did was set up your name and email address:
 
 $ git config --global user.name "John Doe"
