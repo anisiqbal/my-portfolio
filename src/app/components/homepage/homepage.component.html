@@ -5,15 +5,15 @@
         <div class="row">
             <div class="col-6">
                 <div class="banner-text mt-5">
-                    <h6 class="text-uppercase">this is me</h6>
-                    <h1 class="text-uppercase">muhammad anis</h1>
-                    <p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.</p>
+                    <h6 class="text-uppercase">{{banner.subtitle}}</h6>
+                    <h1 class="text-uppercase">{{banner.title}}</h1>
+                    <p>{{banner.description}}</p>
                     <button class="text-uppercase">discover now</button>
                 </div>
             </div>
             <div class="col-6">
                 <div class="banner-right-img">
-                    <img src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg?t=st=1728925362~exp=1728928962~hmac=cb6586b29377259025e9d7503c7ed8c9d23b702ca84e2e16a9530435efab4526&w=996" alt="">
+                    <img [src]="banner.img" alt="">
                 </div>
             </div>
         </div>

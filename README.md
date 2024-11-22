@@ -74,3 +74,94 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
 
+///// START JAVASCRIPT ////////
+
+what is Angular?
+. A UI framework built by google.
+. A component-based framework for building scalable app.
+. Provided collection of libraries to cover features like Routing,Forms.
+
+-> Framework Vs Liabraries?
+what is Framework?
+. Framework generally contains  set of liabraries.
+. You can extend the frameworks.
+. some example are Angular, .Net , ionic, Expressjs.
+
+-> what is Liabraries?
+. Libraries generally perform specific operation.
+. you can combine multiple libraries to build apps.
+. some example are React, MomentJS, Lodash.
+
+-> Features of Angular.
+. Template 
+. Data Binding
+. Forms 
+. Routing 
+. Observables
+. PWA
+
+-> Introduction to Typescript.
+. why Typescript ?
+. compiles to javascript.
+. keeps your code evergreen 
+. supported by all major libraries and FrameWorks.
+
+-> installing and creating First Typescript program.
+. install Node 
+. Use latest version of Nodejs
+. npm init to create a package.json
+. intall Typescript "npm i typescript"
+. initialize Typescript
+. "tsc --init"
+
+
+. javascript also has container called variables.
+javascript k ander bhi ek container hota h jisko hum variable kehte hen.
+
+.Different DataTypes can store in variables.
+such as stting, number, array.
+
+==> How to create API integration::
+. any Folder you are applying 'api integration'.
+. apply command in terminal like this "anisiqbal@MBP-Anis about % ng g s about/about".
+. your service is create now.
+. you see about services like files name is about.services.specs.ts and about.services.ts.
+. you go to the file of "app.config.ts" and add "provideHttpClient()"like this ^^^^^^ 'see down'
+                                                                               ||||||
+   export const appConfig: ApplicationConfig = {               
+  providers: [provideRouter(routes), provideClientHydration(), provideHttpClient()]
+};                                                             ^^^^^^^^^^^^^^^^^^
+                                                               |||||||||||||||||||
+
+
+
+. why are using "provideHttpClient()"?
+ mean you dont find any type of error in application.
+
+. next you go to the file of "about.service.ts".
+. and type 'HttpClient' automatically class is import. 
+. "HttpClient" is class that agular is given.
+. next create a 'constructor'.
+
+    constructor(
+     //// you create a any type of name like 'private http:'
+     private http: HttpClient
+  ) {}
+
+. next create a 'function' in constructor.
+like==> 
+
+    ///// you create a function with the name of "getBannerData".
+
+  getBannerData(){
+    
+  }
+
+
+  .api integration hum services me karte hen.
+
+                                                                 
+
+
+
+
