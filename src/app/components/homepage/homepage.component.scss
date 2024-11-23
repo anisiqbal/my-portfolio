@@ -85,3 +85,39 @@
     font-weight: 500;
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 }
+
+
+
+/////// Experience Section ///////
+
+
+.experience .col-4 {
+    text-align: center;
+}
+
+
+.experience-card img {
+    height: 120px;
+    margin: 50px auto 40px;
+    width: 120px;
+    object-fit: cover;
+}
+
+
+.experience h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.experience-card p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #696969;
+    padding: 2px 0px;
+}
+
+.experience {
+    padding: 50px 0;
+}
