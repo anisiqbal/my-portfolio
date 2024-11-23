@@ -30,15 +30,15 @@
         <div class="row">
             <div class="col-6">
                 <div class="about-left-img">
-                    <img src="https://rkstickerlabels.com/wp-content/uploads/2023/10/CB1D9PQM2P.gif" alt="">
+                    <img [src]="about.image" alt="">
 
                 </div>
             </div>
             <div class="col-6">
                 <div class="about-text mt-5">
-                    <h6 class="text-uppercase">About Me</h6>
-                    <h1 class="text-uppercase">Personal Details</h1>
-                    <p>Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <h6 class="text-uppercase">{{about.subtitle}}</h6>
+                    <h1 class="text-uppercase">{{about.title}}</h1>
+                    <p>{{about.description}}</p>
                     <button class="text-uppercase">view full details</button>
                 </div>
                    

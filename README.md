@@ -160,6 +160,19 @@ like==>
 
   .api integration hum services me karte hen.
 
+
+  ....////// Services ////////.......
+
+  API INTEGRATION
+
+  First you create a folder with the name of 'Service'.
+  why this folder is created.
+ create a one Folder: Services
+ create a  Files of all components. banner, about, contact-us
+
+ Create a folder
+ create a file of 'ng g s about/about'
+
                                                                  
 
 
