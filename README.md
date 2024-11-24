@@ -182,5 +182,32 @@ like==>
 5. first you create post Api // 'data post hoga tabhi hum get karen ge naaa'.
 6. then open 'body' and select "Raw".
 7. and select "json".
-8. create a new object and go website see what kind of data would you needed. 
+8. create a new object and go website see what kind of data would you needed.
+
+//// TOO much Experience i have no added "Entries" then i am using Values mean add for loop.///
+
+ <!-- @for (item of experience; track item.companyName) {
+                <div class="col-4">
+                    <div class="experience-card">
+                        <img [src]="item.image" alt="Experience Image">
+                        <p>{{item.designation}}</p>
+                        <h4>{{item.companyName}}</h4>
+                        <p>{{item.tenure}}</p>
+                    </div>
+                </div>
+            } @empty {
+                <li>There are no items.</li>
+            } -->
+
+
+/////////////////// @For . Angular //////////////
+
+<!-- @for (item of items; track item.name) {
+<li>{{ item.name }}</li>
+} @empty {
+<li>There are no items.</li>
+} -->
+
+
+
 

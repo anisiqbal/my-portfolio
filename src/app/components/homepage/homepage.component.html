@@ -80,14 +80,18 @@
             <div class="col-12">
                 <h1>Educations</h1>
             </div>
-            <div class="col-4">
-                <div class="education-card">
-                    <img src="../../../assets/img/images.iu.png" alt="">
-                    <p>Iqra university</p>
-                    <h4>BSCS</h4>
-                    <p>Nov 2015 - May 2017</p>
-                </div>
-            </div>    
+            @for (item of education; track item.universityName) {
+                <div class="col-3">
+                    <div class="education-card">
+                        <img [src]="item.image" alt="Education image">
+                        <p>{{item.universityName}}</p>
+                        <h4>{{item.degree}}</h4>
+                        <p>{{item.tenure}}</p>
+                    </div>
+                </div> 
+                } @empty {
+                <li>There are no items.</li>
+                }   
         </div>
     </div>
 </div>

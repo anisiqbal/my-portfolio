@@ -108,6 +108,7 @@
     text-align: center;
     letter-spacing: 2px;
     font-weight: 600;
+    padding-bottom: 30px;
 }
 
 .experience-card p {
@@ -119,20 +120,20 @@
 }
 
 .experience {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 
 ///////// Education Section //////
 
-.education .col-4 {
+.education .col-3 {
     text-align: center;
 }
 
 
 .education-card img {
     height: 120px;
-    margin: 50px auto 5px;
+    margin: 50px auto 40px;
     width: 120px;
     object-fit: cover;
 }
@@ -142,6 +143,7 @@
     text-align: center;
     letter-spacing: 2px;
     font-weight: 600;
+    padding-bottom: 30px;
 }
 
 .education-card p {
@@ -153,5 +155,5 @@
 }
 
 .education {
-    padding: 50px 0;
+    padding: 60px 0;
 }

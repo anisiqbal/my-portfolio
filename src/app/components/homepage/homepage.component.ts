@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BannerService } from '../../services/banner/banner.service';
 import { AboutService } from '../../services/about/about.service';
 import { ExperienceService } from '../../services/experience/experience.service';
+import { EducationService } from '../../services/education/education.service';
 
 
 @Component({
@@ -16,11 +17,13 @@ export class HomepageComponent implements OnInit {
   banner: any = {};
   about: any ={};
   experience: any ={};
+  education: any ={};
 
   constructor(
     private bannerService: BannerService,
     private aboutService: AboutService,
-    private experienceService: ExperienceService
+    private experienceService: ExperienceService,
+    private educationService: EducationService
 
   ) {}
 
@@ -29,6 +32,7 @@ export class HomepageComponent implements OnInit {
     this.getBanner();
     this.getAbout();
     this.getExperience();
+    this.getEducation();
   
 
   }
@@ -65,6 +69,15 @@ export class HomepageComponent implements OnInit {
 
       this.experience = Object.values(res)
       console.log(this.experience);
+    })
+  }
+
+  getEducation(){
+    this.educationService.getEducationService().subscribe((res: any)=>{
+      console.log('education-data', res );
+
+      this.education = Object.values(res)
+      console.log(this.education);
     })
   }
   
