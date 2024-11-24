@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BannerService } from '../../services/banner/banner.service';
 import { AboutService } from '../../services/about/about.service';
-// import { log } from 'console';
-// import { console } from 'inspector';
+import { ExperienceService } from '../../services/experience/experience.service';
+
 
 @Component({
   selector: 'app-homepage',
@@ -15,16 +15,20 @@ export class HomepageComponent implements OnInit {
 
   banner: any = {};
   about: any ={};
+  experience: any ={};
 
   constructor(
     private bannerService: BannerService,
     private aboutService: AboutService,
+    private experienceService: ExperienceService
+
   ) {}
 
   // get data automatically when my component loads
   ngOnInit(): void {
     this.getBanner();
     this.getAbout();
+    this.getExperience();
   
 
   }
@@ -54,5 +58,15 @@ export class HomepageComponent implements OnInit {
       console.log(this.about);
     })
   }
+
+  getExperience(){
+    this.experienceService.getExperienceService().subscribe((res: any)=>{
+      console.log('experience-data', res);
+
+      this.experience = Object.values(res)
+      console.log(this.experience);
+    })
+  }
+  
 
 }

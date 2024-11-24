@@ -171,10 +171,16 @@ like==>
  create a  Files of all components. banner, about, contact-us
 
  Create a folder
- create a file of 'ng g s about/about'
+ create a file of 'ng g s about/about'.
 
-                                                                 
+ ===> how to create Api in Firebase 1st step..
 
-
-
+1. first open firebase
+2. create Firebase application like your visual code application 
+3. open realtime database see link like https://portfolio-app-b805f-default-rtdb.firebaseio.com/   after link see + button press and add api name in key only en enter direct.
+4. copy link firbase see the top 
+5. first you create post Api // 'data post hoga tabhi hum get karen ge naaa'.
+6. then open 'body' and select "Raw".
+7. and select "json".
+8. create a new object and go website see what kind of data would you needed. 
 

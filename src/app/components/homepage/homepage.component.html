@@ -54,39 +54,45 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Experience</h1>
+                <h1>Experiences</h1>
             </div>
-            <div class="col-4">
-                <div class="experience-card">
-                    <img src="../../../assets/img/images1.png" alt="">
-                    <p>Associate Angular Developer</p>
-                    <h4>Thrashtech Solution</h4>
-                    <p>Nov 2015 - May 2017</p>
+            @for (item of experience; track item.companyName) {
+                <div class="col-4">
+                    <div class="experience-card">
+                        <img [src]="item.image" alt="Experience Image">
+                        <p>{{item.designation}}</p>
+                        <h4>{{item.companyName}}</h4>
+                        <p>{{item.tenure}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="experience-card">
-                    <img src="../../../assets/img/hyperinventive.jpeg" alt="">
-                    <p>Wordpress Developer</p>
-                    <h4>Hyperinventive Company</h4>
-                    <p>Nov 2015 - May 2017</p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="experience-card">
-                    <img src="../../../assets/img/sky_digital_khi_logo.jpeg" alt="">
-                    <p>UI Developer</p>
-                    <h4>Sky Digital</h4>
-                    <p>Nov 2015 - May 2017</p>
-                </div>
-            </div>
-           
-           
-            
-            
+            } @empty {
+                <li>There are no items.</li>
+            }
         </div>
     </div>
 </div>
+
+<!-- Education-section -->
+
+<div class="education">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Educations</h1>
+            </div>
+            <div class="col-4">
+                <div class="education-card">
+                    <img src="../../../assets/img/images.iu.png" alt="">
+                    <p>Iqra university</p>
+                    <h4>BSCS</h4>
+                    <p>Nov 2015 - May 2017</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+
 
 
 
