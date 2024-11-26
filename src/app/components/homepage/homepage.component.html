@@ -96,6 +96,30 @@
     </div>
 </div>
 
+<div class="project">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Projects</h1>
+            </div>
+            @for (item of project; track item.companyName) {
+                <div class="col-4">
+                    <div class="project-card">
+                        <img [src]="item.image" alt="Project-image">
+                        <p>{{item.projectName}}</p>
+                        <h4>{{item.companyName}}</h4>
+                        <p>{{item.designation}}</p>
+                    </div>
+                </div>
+                } @empty {
+                <li>There are no items.</li>
+                }
+                
+           
+        </div>
+    </div>
+</div>
+
 
 
 

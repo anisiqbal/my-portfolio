@@ -3,6 +3,7 @@ import { BannerService } from '../../services/banner/banner.service';
 import { AboutService } from '../../services/about/about.service';
 import { ExperienceService } from '../../services/experience/experience.service';
 import { EducationService } from '../../services/education/education.service';
+import { ProjectService } from '../../services/project/project.service';
 
 
 @Component({
@@ -18,12 +19,14 @@ export class HomepageComponent implements OnInit {
   about: any ={};
   experience: any ={};
   education: any ={};
+  project: any={};
 
   constructor(
     private bannerService: BannerService,
     private aboutService: AboutService,
     private experienceService: ExperienceService,
-    private educationService: EducationService
+    private educationService: EducationService,
+    private projectService: ProjectService,
 
   ) {}
 
@@ -33,6 +36,7 @@ export class HomepageComponent implements OnInit {
     this.getAbout();
     this.getExperience();
     this.getEducation();
+    this.getProject();
   
 
   }
@@ -78,6 +82,15 @@ export class HomepageComponent implements OnInit {
 
       this.education = Object.values(res)
       console.log(this.education);
+    })
+  }
+
+  getProject(){
+    this.projectService.getProjectService().subscribe((res: any)=>{
+      console.log('project-data', res);
+
+      this.project = Object.values(res)
+      console.log(this.project);
     })
   }
   
