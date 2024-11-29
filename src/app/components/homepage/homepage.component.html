@@ -102,7 +102,7 @@
             <div class="col-12">
                 <h1>Projects</h1>
             </div>
-            @for (item of project; track item.companyName) {
+            @for (item of project; track item.projectName) {
                 <div class="col-4">
                     <div class="project-card">
                         <img [src]="item.image" alt="Project-image">
@@ -111,9 +111,9 @@
                         <p>{{item.designation}}</p>
                     </div>
                 </div>
-                } @empty {
+            } @empty {
                 <li>There are no items.</li>
-                }
+            }
                 
            
         </div>

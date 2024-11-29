@@ -209,5 +209,24 @@ like==>
 } -->
 
 
+//////// how to add fontawsome in Angular ////////////
+
+<!-- Add the FontAwesome CDN to index.html: You can include the FontAwesome icons by adding the CDN link to the <head> section of your index.html file.
+
+Open the src/index.html file in your Angular project and add the following inside the <head> tag:
+
+html
+Copy code
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+This will load the FontAwesome stylesheet from the CDN and give you access to the icons.
+
+Use FontAwesome icons in your components: In your Angular component template files (e.g., app.component.html), you can now use FontAwesome icons by simply referencing them with the appropriate class names. For example:
+
+html
+Copy code
+<i class="fas fa-home"></i> Example of home icon
+<i class="fab fa-github"></i> Example of GitHub logo -->
+
+
 
 
