@@ -20,6 +20,11 @@ export const routes: Routes = [
         loadComponent: ()=> import("../app/components/portfolio/portfolio.component").then(c => c.PortfolioComponent)
                        
     },
+    {
+        path: 'admin',
+        loadComponent: ()=> import("../app/components/admin/admin.component").then(c => c.AdminComponent)
+                       
+    },
 ];
 
 
