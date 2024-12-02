@@ -15,6 +15,11 @@ export const routes: Routes = [
         loadComponent: ()=> import("../app/components/contact-us/contact-us.component").then(c => c.ContactUsComponent)
                        
     },
+    {
+        path: 'portfolio',
+        loadComponent: ()=> import("../app/components/portfolio/portfolio.component").then(c => c.PortfolioComponent)
+                       
+    },
 ];
 
 
