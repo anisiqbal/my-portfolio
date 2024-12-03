@@ -1,0 +1,39 @@
+<div class="banner-heading">
+    <p>Banner Form</p>
+</div>
+
+<div>
+    <form [formGroup]="bannerForm">
+        <div class="banner-title">
+            Tiltle : <input type="text" class="form-control"  formControlName="title">
+        </div>
+
+        <div class="banner-subtitle">
+            Subtiltle : <input type="text" class="form-control"  formControlName="subtitle">
+        </div>
+
+        <div class="banner-image">
+            Image : <input type="text" class="form-control"  formControlName="image">
+        </div>
+
+        <div class="banner-button">
+            <button class="btn btn-primary" (click)="register()">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- <form>
+    
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> -->

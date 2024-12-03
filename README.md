@@ -229,4 +229,92 @@ Copy code
 
 
 
+------ How to add Reactive Form -------------
+
+1. This command pass in Terminal::
+   anisiqbal@MacBook-Pro-Anis admin % ng g c banner-form
+   anisiqbal@MacBook-Pro-Anis admin % ng g c about-form
+   anisiqbal@MacBook-Pro-Anis admin % ng g c experience-form
+   anisiqbal@MacBook-Pro-Anis admin % ng g c education-form
+    anisiqbal@MacBook-Pro-Anis admin % ng g c project-form
+
+
+2. and add this command in admin.component.html .
+
+   <!-- <banner-form></banner-form>
+     <about-form></about-form>
+     <experience-form></experience-form>
+     <education-form></education-form>
+     <project-form></project-form> -->
+
+3. and all 'form components' Bannerform.component.ts class name like 'BannerFormComponent' add this name in "imports" in 'admin.components.ts'
+
+4. and go banner-form.component.ts and add 
+   imports: [ReactiveFormsModule],
+
+   export class BannerFormComponent {
+
+  bannerForm!: FormGroup;
+
+  constructor(){}
+
+  ngOnInit(){
+    this.bannerForm= new FormGroup({
+      title: new FormControl(),
+      subtitle: new FormControl(),
+      image: new FormControl(),
+    })
+  }
+
+  register(){
+    console.log(this.bannerForm.value)
+  }
+
+}
+
+5. and go and go banner-form.component.html and add this form
+<!-- 
+   <div>
+    <form [formGroup]="bannerForm">
+        <div>
+            Tiltle : <input type="text" placeholder="Enter Title" formControlName="title">
+        </div>
+
+        <div>
+            Subtiltle : <input type="text" placeholder="Enter Title" formControlName="subtitle">
+        </div>
+
+        <div>
+            Image : <input type="text" placeholder="Enter Title" formControlName="image">
+        </div>
+
+        <div>
+            <button (click)="register()">Submit</button>
+        </div>
+    </form>
+</div> -->
+
+6. go and check console in project
+
+
+-------- How to add Bootstrap CDN ----------------------
+
+
+1. Go to index.html this link add in "head" tag
+
+
+ <!-- <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQ2iHGfVCb3kQ1fLQogN+TvwOE8Y2ZeBpjZxPhEn2lnSwZKD5K2O6wW8j" 
+    crossorigin="anonymous"> -->
+
+2. Go to index.html this link add in "body" tag
+ <!-- <script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-kQ2E7R3Pz8p1fsA2IDMj3lRoYxtzK/aowhFfGOI1xIg4qSTwCJcq1rQGVN6kDLSR" 
+  crossorigin="anonymous"></script> -->
+
+
+   
 
