@@ -1,1 +1,33 @@
-<p>about-form works!</p>
+<div class="about-heading">
+    <p>About Form</p>
+</div>
+
+<div>
+    <form [formGroup]="aboutForm">
+
+
+        <div class="about-subtitle">
+            Subtiltle : <input type="text" class="form-control"  formControlName="subtitle">
+        </div>
+
+        <div class="about-title">
+            Tiltle : <input type="text" class="form-control"  formControlName="title">
+        </div>
+
+        <div class="about-description">
+            Tiltle : <input type="text" class="form-control"  formControlName="title">
+        </div>
+
+        <div class="about-image">
+            Image : <input type="text" class="form-control"  formControlName="image">
+        </div>
+
+        <div class="about-button">
+            <button class="btn btn-primary" (click)="register()">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+
+

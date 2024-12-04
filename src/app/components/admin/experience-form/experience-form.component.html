@@ -1,1 +1,30 @@
-<p>experience-form works!</p>
+<div class="experience-heading">
+    <p>Experience Form</p>
+</div>
+
+<div>
+    <form [formGroup]="experienceForm">
+        <div class="experience-image">
+            Image : <input type="text" class="form-control"  formControlName="image">
+        </div>
+
+        <div class="experience-designation">
+            Designation : <input type="text" class="form-control"  formControlName="designation">
+        </div>
+
+        <div class="experience-cname">
+            Company Name : <input type="text" class="form-control"  formControlName="companyName">
+        </div>
+
+        <div class="experience-tenure">
+            Tenure : <input type="text" class="form-control"  formControlName="tenure">
+        </div>
+
+        <div class="experience-button">
+            <button class="btn btn-primary" (click)="register()">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+

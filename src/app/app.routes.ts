@@ -25,11 +25,7 @@ export const routes: Routes = [
         loadComponent: ()=> import("../app/components/admin/admin.component").then(c => c.AdminComponent)
                        
     },
-    {
-        path: 'banner-form',
-        loadComponent: ()=> import("../app/components/admin/banner-form/banner-form.component").then(c => c.BannerFormComponent)
-                       
-    },
+    
 ];
 
 
