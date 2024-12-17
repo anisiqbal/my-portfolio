@@ -1,1 +1,27 @@
-<p>education-form works!</p>
+<div class="education-heading">
+    <p>Education Form</p>
+</div>
+
+<div>
+    <form [formGroup]="educationForm">
+        <div class="education-image">
+            Image : <input type="text" class="form-control" formControlName="image">
+        </div>
+
+        <div class="university-name">
+            University Name : <input type="text" class="form-control" formControlName="universityName">
+        </div>
+
+        <div class="university-degree">
+            University Degree : <input type="text" class="form-control" formControlName="universityDegree">
+        </div>
+
+        <div class="university-tenure">
+            University Tenure : <input type="text" class="form-control" formControlName="universityTenure"> 
+        </div>
+
+        <div class="education-button">
+            <button class="btn btn-primary" (click)="register()">Submit</button>
+        </div>
+    </form>
+</div>
